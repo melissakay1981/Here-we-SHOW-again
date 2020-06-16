@@ -163,7 +163,7 @@ kata9heading.append('kata 9 ')
       const kata13Answer = document.createElement('div')
       mainElement.append(kata13heading)
       mainElement.append(kata13Answer)
-      kata12heading.append('kata 13 ')
+      kata13heading.append('kata 13 ')
       for (let index = 0; index < array.length; index++){
         if (array[index] % 2 ===0){
           
@@ -174,13 +174,59 @@ kata9heading.append('kata 9 ')
             kata13Answer.append(array[index]+ ', ')
           }
       }
-    
-
-
+      const kata14heading = document.createElement('h1')
+      const kata14Answer = document.createElement('div')
+      mainElement.append(kata14heading)
+      mainElement.append(kata14Answer)
+      kata14heading.append('kata 14 ')
+      let squareArray = []
+      for (let index = 0; index < array.length; index+=1) {
+        let squareArray = []
+        squareArray = array[index] * array[index]
+        
+           kata14Answer.append(squareArray + ', ')
+        
+      }
   
-  //Display all the odd numbers contained in sampleArray. (469, 755, 245, …, 179, 535)
-  //Display the square of each element in sampleArray. (219961, 570025, …, 222784)
-  //Display the sum of all the numbers from 1 to 20.
-  //Display the sum of all the elements in sampleArray.
-  //Display the smallest element in sampleArray.
+      const kata15heading = document.createElement('h1')
+      const kata15Answer = document.createElement('div')
+      mainElement.append(kata15heading)
+      mainElement.append(kata15Answer)
+      kata15heading.append('kata 15 ')
+      let results = 0
+      for (let index = 0; index < 21; index +=1){
+        results +=index
+
+      }
+      kata15Answer.append(results)
+  
+      const kata16heading = document.createElement('h1')
+      const kata16Answer = document.createElement('div')
+      mainElement.append(kata16heading)
+      mainElement.append(kata16Answer)
+      kata16heading.append('kata 16 ')
+
+      let result2 = 0
+      for (let index = 0; index < array.length; index +=1){
+        result2 += array[index]
+
+      }
+        kata16Answer.append(result2)
+     
+        const kata17heading = document.createElement('h1')
+        const kata17Answer = document.createElement('div')
+        mainElement.append(kata17heading)
+        mainElement.append(kata17Answer)
+        kata17heading.append('kata 17 ')   
+
+        kata17Answer.append(Math.min(...array))
+
+
+        const kata18heading = document.createElement('h1')
+        const kata18Answer = document.createElement('div')
+        mainElement.append(kata18heading)
+        mainElement.append(kata18Answer)
+        kata18heading.append('kata 18 ')   
+
+        kata18Answer.append(Math.max(...array))
   //Display the largest element in sampleArray.
